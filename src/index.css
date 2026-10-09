@@ -1,0 +1,83 @@
+:root {
+  --bg: #dfe6e1;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #edf3ef 0%, #dfe6e1 100%);
+  --panel: rgba(255, 255, 255, 0.35);
+  --panel-strong: rgba(255, 255, 255, 0.65);
+  --text: #0f2a2d;
+  --muted: #254a4d;
+  --accent: #73f0d6;
+  --accent-strong: #35d7af;
+  --accent-dark: #12826a;
+  --card: rgba(255, 255, 255, 0.72);
+  --card-hover: rgba(255, 255, 255, 0.92);
+  --shadow: rgba(13, 28, 31, 0.08);
+  --shadow-lg: 0 16px 36px rgba(13, 28, 31, 0.12);
+  --glow: rgba(53, 215, 175, 0.25);
+  --glow-hover: rgba(53, 215, 175, 0.45);
+  --line: rgba(15, 42, 45, 0.12);
+  --line-hover: rgba(53, 215, 175, 0.55);
+  --focus-ring: #169375;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--bg);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Accessible focus styling for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
