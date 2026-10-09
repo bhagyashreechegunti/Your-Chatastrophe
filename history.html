@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved Summaries | Chatastrophe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <nav class="nav-bar">
+          <a href="index.html" class="brand-block">
+            <span class="spark"></span>
+            <span class="brand-label">What Did I Miss?</span>
+          </a>
+          <div class="nav-links">
+            <a href="analyze.html">Analyze</a>
+            <a href="history.html">Saved summaries</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="history-shell">
+        <section class="history-card">
+          <div class="history-header">
+            <h2>Saved summaries</h2>
+            <button id="clearHistoryBtn" class="ghost-btn">Clear history</button>
+          </div>
+          <ul id="historyList" class="history-list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
